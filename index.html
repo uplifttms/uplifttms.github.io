@@ -1,11 +1,106 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html class="no-js" lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <title>Página de prueba</title>
+    <!-- <% include ../partials/frontend_header.ejs %> -->
+    <title>Uplift TMS</title>
 </head>
+
 <body>
-  <h1>Hola amiguitos!</h1>
-  <footer>gpuma 2017</footer>
+    <!-- <% include ../partials/frontend_navbar.ejs %> -->
+
+    <!-- The actual snackbar -->
+    <div id="snackbar"></div>
+
+    <div class="white-background">
+        <br><br><br>
+        <div class="row jumbotron">
+            <div class="columns small-1 large-6 jumbotron-column">
+                <h1><span style="font-weight: bold;">Modern Management<br>Software</span> for
+                    Transport<br>Operators.</h1>
+                <div>Book consignments, dispatch vehicles, and manage rates.<br>Perfect for small to mid scale
+                    transport operators.</div>
+                <br>
+                <a class="button large orange-button" href="#signUpModal" rel="modal:open">Sign Up <i
+                        class="fi-arrow-right orange-button-arrow"></i></a>
+                        <br>
+                <a class="button small blue-button-inverted " href="/demo">Live Demo<i
+                    class="fi-arrow-right blue-button-arrow"></i></a>
+            </div>
+            <div class="columns small-1 large-6 jumbotron-column">
+                <img class="jumbotron-image"
+                    src="https://res.cloudinary.com/di12po0kz/image/upload/v1583465953/uplift-truck-cropped_bdo46v.png">
+            </div>
+        </div>
+        <br><br><br>
+    </div>
+
+    <div class="grey-background">
+        <br><br><br>
+        <div class="row small-up-1 medium-up-2 large-up-2">
+            <div class="column column-block">
+                <div class="card">
+                    <h4 class="card-title">Dispatching</h4>
+                    <p class="card-text">Book freight or container jobs, plan legs, and allocate jobs to vehicles. Get
+                        full visibility on both vehicle and job information in real time.<br>
+                        Enable clients to sign in to see and receive real time updates on the status of their
+                        deliveries.</p>
+                    <a href="/features" class="button small blue-button card-button">Learn More</a>
+                </div>
+            </div>
+            <div class="column column-block">
+                <div class="card">
+                    <h4 class="card-title">Rate Calculator</h4>
+                    <p class="card-text">Define your own geography as rate-zones, then define schedule or client
+                        specific rates. When jobs are booked, rates are automatically calculated and applied. Once you
+                        have verified the amounts, charges can then be invoiced out to clients. </p>
+                    <a href="/features" class="button small blue-button card-button">Learn More</a>
+                </div>
+            </div>
+            <div class="column column-block">
+                <div class="card">
+                    <h4 class="card-title">EDI</h4>
+                    <p class="card-text">Send and receive job data from 3rd parties such as clients or subcontractors in
+                        real time.</p>
+                    <a href="/features" class="button small blue-button card-button">Learn More</a>
+                </div>
+            </div>
+            <div class="column column-block">
+                <div class="card">
+                    <h4 class="card-title">Driver App</h4>
+                    <p class="card-text">Allocate jobs to vehicles, then empower your drivers to sign-in to our mobile
+                        app with their devices. This app allows drivers to receive jobs on the go, and send back to
+                        dispatch exact pickup and delivery times,
+                        along with recipient signature captures.</p>
+                    <div class="" style="flex-wrap: nowrap;
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: center;
+                        align-content: space-around;
+                        transform: translateY(135%);">
+                        <a href="/features" class="button small blue-button" style="order: 0; position: static;">Learn More</a>
+                        <a href="https://drive.google.com/file/d/1kjKCuDPJG3TVmo1GGFo6VtnsLLYIfoiq/view?usp=sharing"
+                            class="button small blue-button" style="order: 1; position: static; margin-left: auto;">Install</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br><br><br>
+    </div>
+
+    <!-- <% include ../partials/frontend_footer.ejs %>
+
+    <% include ../modals/sign_up.ejs %>
+
+    <% include ../modals/sign_in.ejs %>
+
+    <% include ../modals/terms_and_services.ejs %> -->
+
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script src="https://dhbhdrzi4tiry.cloudfront.net/cdn/sites/foundation.js"></script>
+    <script>
+        $(document).foundation();
+    </script>
 </body>
+
 </html>

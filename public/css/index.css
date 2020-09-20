@@ -1,0 +1,257 @@
+.uplift-logo {
+    height: 40px;
+}
+
+.menu-item {
+    color: #000;
+}
+
+.jumbotron:focus {
+    outline: none !important;
+}
+
+.top-bar, .menu {
+    background-color: #fff !important;
+}
+
+.top-left {
+    position: absolute;
+    top: 110px;
+    left: 16px;
+}
+
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.grey-background {
+    background-color: #f7f7f7;
+}
+
+.blue-background {
+    background-color: #2941a0;
+    background-image: url(https://res.cloudinary.com/di12po0kz/image/upload/v1583465945/uplift-web-banner-1_l4zvrt.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.white-background {
+    background-color: #ffffff;
+}
+
+.orange-button {
+    background-color: #ff8925;
+    border-radius: 25px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.orange-button-arrow {
+    padding-left: 10px;
+}
+
+.orange-button:hover {
+    background-color: #ff6525;
+}
+
+.orange-button:focus {
+    background-color: #ff6525;
+}
+
+.blue-button-arrow {
+    padding-left: 10px;
+}
+
+.blue-button:hover {
+    background-color: #2941a0;
+}
+
+.blue-button:focus {
+    background-color: #2941a0;
+}
+
+.blue-button {
+    border-style: solid;
+    border-color: #2941a0;
+    color: #2941a0;
+    background-color: #ffffff;
+    border-radius: 25px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.blue-button:hover {
+    background-color: #2941a0;
+    color: #ffffff;
+}
+
+.blue-button:focus {
+    background-color: #2941a0;
+    color: #ffffff;
+}
+
+.blue-button-inverted {
+    border-style: solid;
+    border-color: #2941a0;
+    color: #ffffff;
+    background-color: #2941a0;
+    border-radius: 25px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.blue-button-inverted:hover {
+    background-color: #ffffff;
+    color: #2941a0;
+}
+
+.blue-button-inverted:focus {
+    background-color: #ffffff;
+    color: #2941a0;
+}
+
+.card {
+    background-color: #ffffff;
+    border-style: solid;
+    border-color: black;
+    border-width: 0px;
+    height: 350px !important;
+    width: 350px !important;
+    margin: 25px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+    padding: 30px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 5px;
+    position: relative;
+}
+
+.card-title {
+    color: #2941a0;
+    font-weight: bold;
+}
+
+.card-text {
+    font-size: 14px;
+}
+
+.card-button {
+    position: absolute;
+    bottom: 0px;
+    margin-bottom: 30px;
+}
+
+.menu-icon {
+    float: right;
+    top: 10px;
+}
+
+.menu-icon:after {
+    background: #ff8925;
+    box-shadow: 0 7px 0 #ff8925, 0 14px 0 #ff8925;
+    
+}
+
+.title-bar {
+    background: #fff;
+}
+
+.feature-text {
+    margin: 15px;
+}
+
+/* Small only */
+@media screen and (max-width: 39.9375em) {
+    .jumbotron {
+        text-align: center;
+    }
+    .jumbotron-column {
+        display: contents;
+    }
+
+    #signUpModal {
+        top: 5% !important;
+    }
+}
+
+/* Medium and up */
+@media screen and (min-width: 40em) {
+    
+}
+
+/* Medium only */
+@media screen and (min-width: 40em) and (max-width: 63.9375em) {
+    .jumbotron {
+        text-align: center;
+    }
+    .jumbotron-column {
+        display: contents;
+    }
+
+    #signUpModal {
+        top: 20% !important;
+    }
+}
+
+/* Large and up */
+@media screen and (min-width: 64em) {}
+
+/* Large only */
+@media screen and (min-width: 64em) and (max-width: 74.9375em) {}
+
+/* The snackbar - position it at the bottom and in the middle of the screen */
+#snackbar {
+    visibility: hidden; /* Hidden by default. Visible on click */
+    min-width: 250px; /* Set a default minimum width */
+    margin-left: -125px; /* Divide value of min-width by 2 */
+    background-color: #333; /* Black background color */
+    color: #fff; /* White text color */
+    text-align: center; /* Centered text */
+    border-radius: 2px; /* Rounded borders */
+    padding: 16px; /* Padding */
+    position: fixed; /* Sit on top of the screen */
+    z-index: 1; /* Add a z-index if needed */
+    left: 80%; /* Center the snackbar */
+    /* bottom: 30px; 30px from the bottom */
+    top: 30px;
+  }
+  
+  /* Show the snackbar when clicking on a button (class added with JavaScript) */
+  #snackbar.show {
+    visibility: visible; /* Show the snackbar */
+    /* Add animation: Take 0.5 seconds to fade in and out the snackbar.
+    However, delay the fade out process for 2.5 seconds */
+    -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+    animation: fadein 0.5s, fadeout 0.5s 2.5s;
+  }
+  
+  /* Animations to fade the snackbar in and out */
+  @-webkit-keyframes fadein {
+    from {top: 0; opacity: 0;}
+    to {top: 30px; opacity: 1;}
+  }
+  
+  @keyframes fadein {
+    from {top: 0; opacity: 0;}
+    to {top: 30px; opacity: 1;}
+  }
+  
+  @-webkit-keyframes fadeout {
+    from {top: 30px; opacity: 1;}
+    to {top: 0; opacity: 0;}
+  }
+  
+  @keyframes fadeout {
+    from {top: 30px; opacity: 1;}
+    to {top: 0; opacity: 0;}
+  }
+
+  .uplift-modal {
+    top: 0px !important;
+  }
+
+ 

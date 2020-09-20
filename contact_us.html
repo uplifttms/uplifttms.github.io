@@ -19,7 +19,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="https://dhbhdrzi4tiry.cloudfront.net/cdn/sites/foundation.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/foundicons/3.0.0/foundation-icons.min.css">
-    <link href="public/css/index.css" rel="stylesheet">
+    <link href="css/index.css" rel="stylesheet">
     <!--  -->
     <link rel="shortcut icon"
         href="https://res.cloudinary.com/di12po0kz/image/upload/v1583465945/favicon_transparent_gefeb5.png"
@@ -28,7 +28,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
-    <script src="public/js/index.js"></script>
+    <script src="js/index.js"></script>
     <title>Uplift TMS</title>
 </head>
 
@@ -75,94 +75,38 @@
         <div class="row">
             <div class="columns small-12 large-12">
                 <br><br><br>
-                <h2>Uplift Transport Management System Features</h2>
-            </div>
-        </div>
-        <div class="row">
-            <div class="columns small-12 large-6">
-                <br>
-                <h4>Organisation</h4>
-                <br>
-                <ul class="feature-text">
-                    <li>Enter client details. Create accounts for clients to login and view their orders and deliveries.
-                    </li>
-                    <li>Define pickup and delivery locations. Select via a map every each places latitude and longitude,
-                        allowing for geographic visibility.</li>
-                    <li>Enter the details of your own vehicles. Connect us with your GPS provider to see vehicles moving
-                        consignments in real time.</li>
-                </ul>
-            </div>
-            <div class="columns small-12 large-6">
-                <br>
-                <img src="https://res.cloudinary.com/di12po0kz/image/upload/v1583620946/uplift_places_vzi9vf.png">
-            </div>
-        </div>
-        <br><br><br>
-        <div class="row">
-            <div class="columns small-12 large-6">
-                <br>
-                <img src="https://res.cloudinary.com/di12po0kz/image/upload/v1589066090/nz_ratezones_ghsxwk.png">
-            </div>
-            <div class="columns small-12 large-6">
-                <br>
-                <h4>Finance</h4>
-                <br>
-                <ul class="feature-text">
-                    <li>First create rate-zones, geographic boundaries which encompass pickup and delivery locations.
-                    </li>
-                    <li>Next, define company wide or client specific rates. Rates require a 'to' and 'from' rate-zone,
-                        along with a rate code (what you are actually carrying).
-                        Rates apply to each job, and can be either per unit (quantity, weight, or cubic), or stepped
-                        rates.</li>
-                    <li>Finally, once a job is created a rate is calculated as assigned and an invoice is created. Once
-                        you have approved and verified each invoice, you can batch any number of invoice and send them
-                        to your account package of choice.</li>
-                    <li>Can generate Xero invoice files, with other accounting package formats on their way.</li>
-                </ul>
+                <h2>Contact Us</h2>
+                <form class="box" method="post" action="/contactus">
+                    <div class="field">
+                        <label for="">Your Email<span style="color: red;">*</span></label>
+                        <div class="control has-icons-left">
+                            <input name="email" type="email" placeholder="e.g. bobsmith@gmail.com" class="input"
+                                required>
+                            <span class="icon is-small is-left">
+                                <i class="fa fa-envelope"></i>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="field">
+                        <label>
+                            Your message<span style="color: red;">*</span>
+                            <textarea name="message" placeholder="Your message..."></textarea>
+                        </label>
+                        <button class="button small blue-button">
+                            Send
+                        </button>
+                    </div>
+                </form>
             </div>
         </div>
         <br><br><br>
-        <div class="row">
-            <div class="columns small-12 large-6">
-                <br>
-                <h4>Dispatch</h4>
-                <br>
-                <ul class="feature-text">
-                    <li>Uplift allows you to book either freight or container jobs. Provide information such as goods
-                        information, required dates and time, and special instructions for the drivers.</li>
-                    <li>Plan the job's journey using our legging based dispatch tool. Allocate jobs to vehicles and
-                        trailers, and define a route for multi-leg jobs. Once happy with a plan, mark it as ready to
-                        send to your drivers mobile app.</li>
-                    <li>Create lists of jobs with our manifest tool. This allows superior visibility for a group of
-                        related jobs </li>
-                </ul>
-            </div>
-            <div class="columns small-12 large-6">
-                <br>
-                <img
-                    src="https://res.cloudinary.com/di12po0kz/image/upload/v1583621214/uplift-dispatch-freight_xgsmmx.png">
-            </div>
-        </div>
         <br><br><br>
-        <div class="row">
-            <div class="columns small-12 large-6">
-                <br>
-                <img src="https://res.cloudinary.com/di12po0kz/image/upload/v1589073606/mobile_mockup_bqpc5q.png">
-            </div>
-            <div class="columns small-12 large-6">
-                <br>
-                <h4>Driver Mobile App</h4>
-                <br>
-                <ul class="feature-text">
-                    <li>Allows drivers to sign in from any mobile device with an internet connection. Limit driver to a
-                        single vehicle, or allow jumping between any vehicle they may possibly drive.</li>
-                    <li>Gives drivers a list of current jobs. Capture details in real time as drivers use the app to
-                        notify dispatch when jobs are uplifted, offloaded, or transferred to another vehicle.</li>
-                    <li>Capture digital signatures from recipients with our sign-on-glass feature.</li>
-                    <li>Currently available for Android. iOS currently under development.</li>
-                </ul>
-            </div>
-        </div>
+        <br><br><br>
+        <br><br><br>
+        <br><br><br>
+        <br><br><br>
+        <br><br><br>
+        <br><br><br>
         <br><br><br>
     </div>
 

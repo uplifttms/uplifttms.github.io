@@ -254,4 +254,6 @@
     top: 0px !important;
   }
 
- 
+ .feature-image {
+    border-radius: 25px;
+ }
